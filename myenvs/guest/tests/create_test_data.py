@@ -1,4 +1,4 @@
-#coding=utf-8
+# coding=utf-8
 '''
 创建嘉宾表（sign_guest）测试数据。
 '''

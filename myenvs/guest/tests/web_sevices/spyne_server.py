@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 from spyne import Application, rpc, ServiceBase, Iterable, Integer, Unicode
 from spyne.protocol.soap import Soap11
 from spyne.server.wsgi import WsgiApplication

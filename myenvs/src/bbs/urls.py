@@ -18,12 +18,12 @@ from django.contrib import admin
 from posts import views
 from posts import urls as posts_urls
 
-from guest import urls as guest_urls
+# from guest import urls as guest_urls
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     # url(r'^home/', views.posts_home),
     # url(r'^home/', views.PostList.as_view()),
-    url(r'^post/',include(posts_urls)),
-    url(r'^guest/',include(guest_urls))
+    url(r'^post/',include(posts_urls))
+    # url(r'^guest/',include(guest_urls))
 ]
 

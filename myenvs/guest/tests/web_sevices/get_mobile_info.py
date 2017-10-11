@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 from suds.client import Client
 
 # 使用库 suds_jurko： https://bitbucket.org/jurko/suds

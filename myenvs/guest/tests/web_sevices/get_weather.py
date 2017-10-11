@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 from suds.client import Client
 from suds.xsd.doctor import ImportDoctor, Import
 

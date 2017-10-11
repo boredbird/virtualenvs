@@ -8,6 +8,46 @@ from django.http import JsonResponse
 # Create your views here.
 from django.http import HttpResponse
 from . import models
+
+
+def posts_act(request):
+	eid = request.GET.get('eid','')                 # 发布会id
+	status = request.GET.get('status','')           # 状态
+
+	print 'eid: ',eid
+	print 'status: ',status
+
+	if eid =='' or status == '' :
+		return JsonResponse({'status':10021,'message':'parameter error'})
+
+	data = {
+		'eid':eid,
+		'status':status,
+		'msg':'This msg is from Server.'
+	}
+
+	return JsonResponse(data)
+
+def posts_post(request):
+	eid = request.POST.get('eid','')                 # 发布会id
+	status = request.POST.get('status','')           # 状态
+
+	print 'eid: ',eid
+	print 'status: ',status
+
+	if eid =='' or status == '' :
+		return JsonResponse({'status':10021,'message':'parameter error'})
+
+	data = {
+		'eid':eid,
+		'status':status,
+		'msg':'This is Server.'
+	}
+
+	return JsonResponse(data)
+    # return JsonResponse({'status':200,'message':'add event success'})
+
+
 def posts_home(request):
 	queryset = models.Post.objects.all()
 	data = {
