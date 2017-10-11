@@ -1,1 +1,1 @@
-d:\program files\anaconda2
+D:\ProgramData\Anaconda2
