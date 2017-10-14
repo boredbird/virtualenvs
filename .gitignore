@@ -1,4 +1,4 @@
-Lib/orig-prefix.txt
+lib/orig-prefix.txt
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
@@ -104,3 +104,4 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+/myenvs/Lib/orig-prefix.txt
