@@ -1,0 +1,1 @@
+@"e:\code\virtualenvs\myenvs\scripts\python.exe" "e:\code\virtualenvs\myenvs\Scripts\markdown_py" %*
